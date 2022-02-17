@@ -56,8 +56,8 @@
     evmos-src.url = github:tharsis/evmos/v0.4.2;
 
     # Issue with replace directive for edwards in dcred dependency
-    # thor-src.flake = false;
-    # thor-src.url = gitlab:thorchain/thornode/v0.77.2;
+    thor-src.flake = false;
+    thor-src.url = gitlab:thorchain/thornode/v0.80.0;
 
     # Issue with dynamically linked libwasmvm, need to figure out how to
     # inject the dependency statically using musl
@@ -108,9 +108,8 @@
           evmos = mkApp { name = "evmos"; drv = packages.evmos; exePath = "/bin/evmosd"; };
           ts-relayer = mkApp { name = "ts-relayer"; drv = packages.ts-relayer; };
           ts-relayer-setup = mkApp { name = "ts-relayer-setup"; drv = packages.ts-relayer-setup; };
-          # bifrost = mkApp { name = "thor"; drv = packages.thor; exePath = "/bin/bifrost"; };
-          # thorcli = mkApp { name = "thor"; drv = packages.thor; exePath = "/bin/thorcli"; };
-          # thord = mkApp { name = "thor"; drv = packages.thor; exePath = "/bin/thord"; };
+          thorcli = mkApp { name = "thor"; drv = packages.thor; exePath = "/bin/thorcli"; };
+          thord = mkApp { name = "thor"; drv = packages.thor; exePath = "/bin/thord"; };
           # juno = mkApp { name = "juno"; drv = packages.juno; exePath = "/bin/junod"; };
         };
       });

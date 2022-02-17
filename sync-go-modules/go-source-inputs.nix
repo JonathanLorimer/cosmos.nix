@@ -37,7 +37,6 @@ let go-project-srcs =
       storePath = "${evmos-src}";
     };
     relayer = { inputName = "relayer-src"; storePath = "${relayer-src}"; };
-    # thor = { inputName = "thor-src"; storePath = "${thor-src}"; };
     # juno = { inputName = "juno-src"; storePath = "${juno-src}"; };
   };
 in

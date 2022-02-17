@@ -39,7 +39,7 @@ let
     ts-relayer = ((import ./resources/ts-relayer) { inherit ts-relayer-src pkgs eval-pkgs; }).ts-relayer;
     ts-relayer-setup = ((import ./resources/ts-relayer) { inherit ts-relayer-src pkgs eval-pkgs; }).ts-relayer-setup;
     relayer = ((import ./resources/relayer) { inherit relayer-src pkgs; });
-    # thor = (import ./resources/thor) { inherit pkgs thor-src; };
+    thor = (import ./resources/thor) { inherit pkgs thor-src; };
     # juno = (import ./resources/juno) { inherit juno-src pkgs; };
   };
 
